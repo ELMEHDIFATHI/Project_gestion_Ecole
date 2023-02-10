@@ -1,0 +1,36 @@
+
+
+
+server.port=8044
+spring.kafka.topic.name= kafkaabsencetopic
+
+keycloak.auth-server-url=http://localhost:8180/auth
+keycloak.realm=school-app
+keycloak.resource=school-client
+keycloak.bearer-only=true
+keycloak.ssl-required=none
+
+spring.kafka.producer.bootstrap-servers: localhost:9092
+spring.kafka.producer.key-serializer: org.apache.kafka.common.serialization.StringSerializer
+spring.kafka.producer.value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+spring.application.name=Kafka_Absence
+
+spring.cloud.discovery.enabled=true
+spring.h2.console.enabled=true
+spring.datasource.url=jdbc:h2:mem:absence-db
+
+
+
+
+eureka.client.enabled=true
+
+
+spring.h2.console.path=/h2-console
+
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.hibernate.ddl-auto=create-drop
+
+
